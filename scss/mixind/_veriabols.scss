@@ -1,0 +1,76 @@
+// font-size 
+:root {
+    --main-header-font: 85px;
+    --sub-header-font: 60px;
+    --sub-text-font: 30px;
+    --font-size-xxl: 28px;
+    --font-size-xl: 25px;
+    --font-size-l: 22px;
+    --font-size-m: 18px;
+    --font-size-s: 15px;
+    @media all and (max-width: 991px) {
+        --main-header-font: 50px;
+        --sub-header-font: 40px;
+        --sub-text-font: 25px;
+        --font-size-xxl: 20px;
+        --font-size-xl: 18px;
+        --font-size-l: 16px;
+        --font-size-m: 13px;
+        --font-size-s: 11px;
+    }
+    @media all and (max-width: 499px) {
+        --main-header-font: 35px;
+        --sub-header-font: 30px;
+        --sub-text-font: 20px;
+        --font-size-xxl: 18px;
+        --font-size-xl: 16px;
+        --font-size-l: 13px;
+        --font-size-m: 12px;
+        --font-size-s: 11px;
+    }
+}
+
+
+// section-gap 
+:root {
+    --max-gap-buttom: 250px;
+    --margin-buttom: 150px;
+    @media all and (max-width: 991px) {
+        --max-gap-buttom: 150px;
+        --margin-buttom: 80px;
+    }
+}
+
+
+// Color Variables
+$white-color: #ffffff;
+$primary-color: #0C0C24;
+$btn-bg_color: #0C0C24;
+$secondary-color: #737373;
+$text-color: #DDDCED;
+$sub-text_color: #A5A5A5;
+$section-bg_color:  #FFF4F4;
+// Font Variables
+$base-font_family: 'Arial';
+$header-font_family: 'Poppins';
+$sub-text_font-family: 'Nunito';
+
+// Dimension Variables
+$main-header_font-size: var(--main-header-font);
+$sub-header_font-size: var(--sub-header-font);
+$sub-text_font-size: var(--sub-text-font);
+$font-size_xxl: var(--font-size-xxl);
+$font-size_xl: var(--font-size-xl);
+$font-size_l: var(--font-size-l);
+$font-size_m: var(--font-size-m);
+$font-size_s: var(--font-size-s);
+
+// section Variables
+$section-gap: var(--margin-buttom);
+$max-section_gap: var(--max-gap-buttom);
+
+
+// mixing code 
+@mixin bg-color ($bg-color){
+    background-color: $bg-color;
+}
